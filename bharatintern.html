@@ -1,28 +1,39 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temperature Conversion</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Temperature Conversion</h1>
+  <h1>Temperature Conversion Tool</h1>
   
   <div class="container">
-    <input type="number" id="inputTemp" placeholder="Enter temperature">
+    <!-- Input field for temperature -->
+    <input type="number" id="inputTemp" placeholder="Enter temperature" required>
+    
+    <!-- Select box for choosing from which unit to convert -->
     <select id="fromUnit">
       <option value="celsius">Celsius</option>
       <option value="fahrenheit">Fahrenheit</option>
     </select>
+    
+    <!-- Select box for choosing to which unit to convert -->
     <select id="toUnit">
       <option value="celsius">Celsius</option>
       <option value="fahrenheit">Fahrenheit</option>
     </select>
+    
+    <!-- Convert button -->
     <button onclick="convertTemperature()">Convert</button>
+    
+    <!-- Output div for displaying result -->
+    <div class="result" id="result"></div>
   </div>
-  
-  <div class="result" id="result"></div>
-  
+
+  <!-- Linking the JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
+
